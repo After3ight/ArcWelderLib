@@ -505,7 +505,7 @@ struct arc_welder_progress {
 			stream << "100.0% complete - " << seconds_elapsed << " seconds total.";
 		}
 		else {
-			stream << " " << std::fixed << std::setprecision(1) << std::setfill('0') << std::setw(4) << percent_complete << "% complete - Estimated " << std::setprecision(0) << std::setw(-1) << seconds_remaining << " of " << seconds_elapsed + seconds_remaining << " seconds remaing.";
+			stream << " " << std::fixed << std::setprecision(1) << std::setfill('0') << std::setw(4) << percent_complete << "% complete - Estimated " << std::setprecision(0) << std::setw(-1) << seconds_remaining << " of " << seconds_elapsed + seconds_remaining << " seconds remaining.";
 		}
 		
 		return stream.str();
